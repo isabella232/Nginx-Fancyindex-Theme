@@ -4,7 +4,7 @@ NGINX FancyIndex Theme
 A prettier theme for nginx' fancyindex module. Further details about this excellent
 module can be found at the dev's [github page](https://github.com/aperezdc/ngx-fancyindex).
 
-####NOTE:
+#### NOTE:
 NGX-FANCYINDEX truncates the file name to 50 characters subtracts 3 and then
 appends a "..>" to the truncated name. This can be fixed by recompiling
 NGX-FANCYINDEX after changing line 55 of "ngx_http_fancyindex_module.c":
@@ -25,7 +25,7 @@ In the nginx fancyindex module 0.4.0 or higher, it is now possible to use a dire
     Context: http, server, location
     Description: Defines the maximum file name length limit in bytes.
 
-#####Usage:
+##### Usage:
  - Compile nginx with the fancyindex module.
  - Include the contents of 'fancyindex.conf' in your location directive of your nginx conf.
  - copy the remaining items in your web root under 'fancyindex'.
@@ -36,14 +36,14 @@ In the nginx fancyindex module 0.4.0 or higher, it is now possible to use a dire
   - images\breadcrumb.png
  - Restart your nginx server.
 
-#####Added/Modified:
+##### Added/Modified:
  - Mime type icons from [Splitbrain](http://www.splitbrain.org/projects/file_icons)
   - Icons default to enabled on large devices and off on small devices like phones.
   - If you'd prefer no icons at all: copy css\fancyindex_NoIcons.css css\fancyindex.css
  - Slightly better handling of mobile CSS click areas.
  - Added HTML5 History for quicker page transitions.
 
-#####Addendums:
+##### Addendums:
  - If you want your 'Parent Directory/' listing back in your file listings:
   - Read: [This Issue](https://github.com/TheInsomniac/Nginx-Fancyindex-Theme/issues/1#issuecomment-43936700)
 
