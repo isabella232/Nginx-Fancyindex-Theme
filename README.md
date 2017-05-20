@@ -17,6 +17,14 @@ To:
 
     #define NGX_HTTP_FANCYINDEX_NAME_LEN 500 (or some other number greater than 50)
 
+In the nginx fancyindex module 0.4.0 or higher, it is now possible to use a directive to control the name length.
+
+  fancyindex_name_length
+  Syntax: fancyindex_name_length length
+  Default: fancyindex_name_length 50
+  Context: http, server, location
+  Description: Defines the maximum file name length limit in bytes.
+
 #####Usage:
  - Compile nginx with the fancyindex module.
  - Include the contents of 'fancyindex.conf' in your location directive of your nginx conf.
